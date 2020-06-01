@@ -23,6 +23,7 @@
     <h1 class="hit-count"></h2>
     <h1>Congratulations!</h1>
   </div>
+  <audio id="pbjt" src="./beats/pbjt.mp3" autoplay="autoplay" loop="loop"></audio>
 </body>
 
 <script>
@@ -44,6 +45,13 @@
         elem.innerHTML += ' (nice)'
       }
     });
+  })();
+</script>
+<script>
+  (function() {
+    "use strict";
+    const pbjt = document.getElementById("pbjt");
+    pbjt.volume = 0.4;
   })();
 </script>
 
