@@ -6,19 +6,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Home</title>
+
+  <style>
+    header {
+      text-align: center; 
+      font-size: xx-large; 
+      padding-top: 50px;
+    }
+
+    .marquee {
+      text-align: center;
+      width: auto;
+      white-space: nowrap;
+    }
+    .marquee p {
+      display: inline-block;
+      font-size:initial;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+
+    body {
+      background-color:steelblue; 
+      font-family: 'Comic Sans MS'
+    }
+
+    img.banana {
+      height: auto;
+      width: 7%;
+      max-width: 50px;
+    }
+
+    img.pikachu {
+      height: auto; 
+      width: 100%; 
+      max-width: 500px;
+    }
+
+    body > div {
+      text-align: center;
+      padding-top: 100px;
+      width: auto;
+    }
+  </style>
 </head>
 
-<header style="text-align: center; font-size: xx-large; padding-top: 50px;">
-  <img style="height:auto; width: 7%; max-width: 50px;" src="./images/banana.gif">
-  Welcome!
-  <img style="height:auto; width: 7%; max-width: 50px;" src="./images/banana.gif">
+<header>
+  <div>
+    <img class="banana" src="./images/banana.gif">
+    Welcome!
+    <img class="banana" src="./images/banana.gif">
+  </div>
+  <div class="marquee"><p>Thanks for visiting my site!</p></div>
 </header>
 
-<body style="background-color:steelblue; font-family: 'Comic Sans MS'">
-  <div style="text-align: center; padding-top: 150px; width: auto">
-    <img style="height: auto; width: 100%; max-width: 500px;" src="./images/pikachu.gif">
+<body>
+  <div>
+    <img class="pikachu" src="./images/pikachu.gif">
   </div>
-  <div style="text-align: center; padding-top: 150px; width: auto">
+  <div>
     <h1>You are visitor number</h1>
     <h1 class="hit-count"></h1>
     <h1>Congratulations!</h1>
