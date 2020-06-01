@@ -14,20 +14,8 @@
       padding-top: 50px;
     }
 
-    .marquee {
-      text-align: center;
-      width: auto;
-      white-space: nowrap;
-    }
-    .marquee p {
-      display: inline-block;
-      font-size:initial;
-      padding-left: 100%;
-      animation: marquee 15s linear infinite;
-    }
-    @keyframes marquee {
-      0%   { transform: translate(0, 0); }
-      100% { transform: translate(-100%, 0); }
+    marquee {
+      font-size: large;
     }
 
     body {
@@ -61,7 +49,7 @@
     Welcome!
     <img class="banana" src="./images/banana.gif">
   </div>
-  <div class="marquee"><p>Thanks for visiting my site!</p></div>
+  <marquee>Thanks for visiting my site!</marquee>
 </header>
 
 <body>
