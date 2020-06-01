@@ -28,7 +28,15 @@
     }
 
     document.querySelectorAll('.hit-count').forEach((elem) => {
-      elem.innerHTML = getRandomInt(1000);
+      const count = getRandomInt(1000);
+      elem.innerHTML = count;
+      
+      if (count == 1) {
+        alert("WOAH YOU WON!");
+      }
+      else if (count == 69 || count == 420) {
+        elem.innerHTML += ' (nice)'
+      }
     });
   })();
 </script>
