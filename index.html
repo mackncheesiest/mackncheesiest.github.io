@@ -7,8 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Home</title>
 </head>
-<body>
-  <h1>Hello Jekyll!</h1>
+
+<body style="background-color:steelblue; font-family: 'Comic Sans MS'">
+  <div style="text-align: center; padding-top: 150px; width: auto">
+    <img style="height: auto; width: 100%; max-width: 500px;" src="./images/pikachu.gif">
+  </div>
+  <div style="text-align: center; padding-top: 150px; width: auto">
+    <h1>You are visitor number</h1>
+    <h1 class="hit-count"></h2>
+    <h1>Congratulations!</h1>
+  </div>
 </body>
+
+<script>
+  (function() {
+    "use strict";
+    
+    const getRandomInt = (max) => {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    document.querySelectorAll('.hit-count').forEach((elem) => {
+      elem.innerHTML = getRandomInt(1000);
+    });
+  })();
+</script>
 
 </html>
