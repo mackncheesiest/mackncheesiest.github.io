@@ -5,8 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Home</title>
+  <title>Josh's New Website</title>
 
+  <!-- Who needs other files -->
   <style>
     header {
       text-align: center; 
@@ -36,6 +37,12 @@
       max-width: 500px;
     }
 
+    img.alien {
+      height: auto;
+      width: 100%;
+      max-width: 100px;
+    }
+
     body > div {
       text-align: center;
       padding-top: 100px;
@@ -61,7 +68,7 @@
     Welcome!
     <img class="banana" src="./images/banana.gif">
   </div>
-  <marquee>Thanks for visiting my site!</marquee>
+  <marquee>Thanks for visiting my website!</marquee>
 </header>
 
 <body>
@@ -69,9 +76,19 @@
     <img class="pikachu" src="./images/pikachu.gif">
   </div>
   <div>
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
     <h1>You are visitor number</h1>
-    <h1 class="hit-count"></h1>
+    <div>
+      <h1 class="hit-count"></h1>
+    </div>
     <h1>Congratulations!</h1>
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
+    <img class="alien" src="./images/alien.gif">
   </div>
   <div>
     <a href="https://github.com/mackncheesiest/" class="btn" target="_blank">Github</a>
@@ -80,10 +97,11 @@
   <audio id="pbjt" src="./beats/pbjt.mp3" autoplay="autoplay" loop="loop"></audio>
 </body>
 
+<!-- Who needs other files -->
 <script>
-  (function() {
-    "use strict";
-    
+  "use strict";
+  (() => {
+    // Who actually wants server-side tracking?
     const getRandomInt = (max) => {
       return Math.floor(Math.random() * Math.floor(max));
     }
@@ -92,18 +110,15 @@
       const count = getRandomInt(1000);
       elem.innerHTML = count;
       
-      if (count == 1) {
-        alert("WOAH YOU WON!");
-      }
-      else if (count == 69 || count == 420) {
+      if (count == 69 || count == 420 || count == 666) {
         elem.innerHTML += ' (nice)'
       }
     });
   })();
 </script>
 <script>
-  (function() {
-    "use strict";
+  "use strict";
+  (() => {  
     const pbjt = document.getElementById("pbjt");
     pbjt.volume = 0.1;
   })();
